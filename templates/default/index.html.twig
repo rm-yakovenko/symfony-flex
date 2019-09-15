@@ -1,0 +1,9 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello DefaultController!{% endblock %}
+
+{% block body %}
+    {% for post in latestPosts %}
+        <div>{{ post.title }}</div>
+    {% endfor %}
+{% endblock %}
